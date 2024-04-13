@@ -1,4 +1,3 @@
-from tabulate import tabulate
 import streamlit as st
 import graphviz
 
@@ -216,7 +215,6 @@ def print_parsing_table(parsing_table):
                     # If only one value is present, it must be 'accept'
                     row.append('accept')
         table.append(row)
-    print(tabulate(table, headers="firstrow", tablefmt="pretty"))
 
 def print_parsing_table(parsing_table):
     headers = list(parsing_table[0].keys())  # Get all symbols as column headers
