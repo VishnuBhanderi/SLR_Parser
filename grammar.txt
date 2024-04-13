@@ -1,0 +1,5 @@
+TERMINALS a b
+NONTERMINALS S A B
+S -> AB
+A -> Aa | a
+B -> Bb | b
